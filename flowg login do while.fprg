@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="23147927"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-13 02:19:54 "/>
+        <attribute name="created" value="MjMxNDc5Mjc7RVNONTEyTjEyNjI4MTc7MjAyMy0wNC0xMzsiMDI6MTE6NTEgIjsyNDIy"/>
+        <attribute name="edited" value="MjMxNDc5Mjc7RVNONTEyTjEyNjI4MTc7MjAyMy0wNC0xMzsiMDI6MTE6NTQgIjsxOzIzMTQ3OTI3O0VTTjUxMk4xMjYyODE3OzIwMjMtMDMtMzA7IjAyOjExOjQxICI7Zmxvd2cgbG9naW4uZnByZzs2NjU5"/>
+        <attribute name="edited" value="MjMxNDc5Mjc7RVNONTEyTjEyNjI4MTc7MjAyMy0wNC0xMzsiMDI6MTk6NTQgIjsyOzI1NDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="usuario" type="String" array="False" size=""/>
+            <declare name="senha" type="String" array="False" size=""/>
+            <declare name="recorrente" type="Boolean" array="False" size=""/>
+            <assign variable="recorrente" expression="true"/>
+            <do expression="recorrente==true">
+                <output expression="&quot;Qual seu nome de usu&#225;rio?&quot;" newline="True"/>
+                <input variable="usuario"/>
+                <if expression="usuario==&quot;Andrey&quot;">
+                    <then>
+                        <output expression="&quot;Digite sua senha&quot;" newline="True"/>
+                        <input variable="senha"/>
+                        <if expression="senha==&quot;dreydrey&quot;">
+                            <then>
+                                <output expression="&quot;Bem-vindo&quot;" newline="True"/>
+                                <assign variable="recorrente" expression="false"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Senha Incorreta&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;Usu&#225;rio Incorreto&quot;" newline="True"/>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
